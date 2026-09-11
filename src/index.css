@@ -1,0 +1,43 @@
+/* Kita hanya import font yang benar-benar dipakai agar performa web lebih cepat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Pengaturan Tipografi */
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  /* Palet Warna Elegan (Monokrom & Earth Tone) */
+  --color-primary: #1A1A1A;          /* Hitam pekat yang lebih lembut */
+  --color-primary-light: #2D2D2D;    /* Abu-abu gelap untuk teks paragraf */
+  --color-secondary: #F5F5F0;        /* Off-white/Beige pucat untuk background section */
+  --color-accent: #B89A7A;           /* Coklat pasir/emas pudar untuk tombol/aksen */
+  --color-surface: #FFFFFF;          /* Putih bersih untuk card produk */
+
+  /* Shadow Mewah */
+  --shadow-elegant: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAFAFA;
+  color: var(--color-primary-light);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Memastikan semua heading menggunakan font serif yang elegan */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  letter-spacing: 0.025em;
+}
+
+button,
+a,
+select,
+input[type="submit"], 
+input[type="button"],
+input[type="checkbox"],
+.cursor-pointer {
+    cursor: pointer !important;
+}
